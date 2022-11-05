@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package grpc; // 没什么用，只是为了生成的代码包名
+option java_package = "a.b.c"; // 生成的代码包名
+option java_outer_classname = "AddServiceProto"; // 生成的代码类名
+option java_multiple_files = true; // 生成多个文件
+
+// 定义服务
+service AddService {
+  // 定义方法
+  rpc add(AddRequest) returns (AddResponse) {}
+}
+
+message AddRequest {
+  int32 a = 1; // 1表示字段的序号
+  int32 b = 2;
+}
+
+message AddResponse {
+  int32 result = 1;
+}
