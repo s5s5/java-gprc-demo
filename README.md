@@ -6,6 +6,8 @@
 
 像调用本地程序一样调用远程程序
 
+![Concept Diagram](https://grpc.io/img/landing-2.svg)
+
 ## 安装
 
 - Maven 依赖
